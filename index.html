@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>캘린더 메모 앱</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>📅 나의 캘린더 메모장</h1>
+  <div class="calendar-header">
+    <button id="prev">이전</button>
+    <h2 id="month-year"></h2>
+    <button id="next">다음</button>
+  </div>
+  <div class="calendar">
+    <div class="day-name">일</div>
+    <div class="day-name">월</div>
+    <div class="day-name">화</div>
+    <div class="day-name">수</div>
+    <div class="day-name">목</div>
+    <div class="day-name">금</div>
+    <div class="day-name">토</div>
+    <div id="calendar-days"></div>
+  </div>
+
+  <!-- 메모 입력창 (모달) -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <span id="close">&times;</span>
+      <h3 id="selected-date"></h3>
+      <textarea id="memo" placeholder="메모를 입력하세요..."></textarea>
+      <button id="save">저장</button>
+      <button id="delete">삭제</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
